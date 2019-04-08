@@ -6,6 +6,10 @@ defmodule IslandsEngine.Island do
   @enforce_keys [:coordinates, :hit_coordinates]
   defstruct [:coordinates, :hit_coordinates]
 
+  def new(type, %Coordinate{} = upper_left) do
+    ??????????????https://learning.oreilly.com/library/view/functional-web-development/9781680505436/f_0019.xhtml
+  end
+
   def new(), do: %Island{coordinates: MapSet.new(), hit_coordinates: MapSet.new()}
 
   def overlaps?(existing_island, new_island),
